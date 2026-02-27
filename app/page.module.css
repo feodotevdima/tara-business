@@ -1,0 +1,321 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background:
+        linear-gradient(rgba(27, 34, 31, 0.7),
+            rgba(27, 34, 31, 0.7)),
+        url('/backgrount_about.webp') no-repeat left center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.heroContent {
+    padding-top: 40vh;
+    padding-left: 160px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 3;
+    color: white;
+    max-width: 1400px;
+}
+
+.heroContent h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.heroContent p {
+    font-size: 24px;
+
+    margin-bottom: 30px;
+}
+
+.heroContent button {
+    background: var(--main_color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    width: 300px;
+    height: 75px;
+}
+
+.heroContent button:hover {
+    background: var(--main_color_hover);
+}
+
+
+.trianglesSection {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
+    z-index: 100;
+    position: relative;
+}
+
+.trianglesSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/backgrount_about_2.svg') no-repeat center bottom;
+    background-size: 100% auto;
+    background-position: center bottom;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.trianglesSectionContent {
+    flex: 1;
+    max-width: 60%;
+    margin-top: 220px;
+    padding-left: 160px;
+    color: white;
+}
+
+.trianglesSectionContent h1 {
+    color: var(--main_color);
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.trianglesSectionContent p {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.trianglesSectionPallets {
+    flex: 1;
+    max-width: 40%;
+    margin-top: 150px;
+    margin-left: 100px;
+    padding-right: 40px;
+}
+
+.trianglesSectionPalletsImage {
+    border: 5px var(--main_color) solid;
+}
+
+.mapContainer {
+    width: 100%;
+    height: calc(100% - 280px);
+    position: relative;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .heroContent h1 {
+        font-size: 40px;
+    }
+
+    .heroContent {
+        padding-top: 35vh;
+        padding-left: 100px;
+        max-width: 900px;
+    }
+
+    .heroContent p {
+        font-size: 22px;
+    }
+
+    .heroContent button {
+        font-size: 28px;
+        width: 220px;
+        height: 65px;
+    }
+
+
+
+
+    .trianglesSection {
+        min-height: 90vh;
+    }
+
+    .trianglesSectionContent {
+        max-width: 50%;
+        padding-left: 120px;
+    }
+
+    .trianglesSectionContent h1 {
+        font-size: 44px;
+        margin-bottom: 40px;
+    }
+
+    .trianglesSectionContent p {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .trianglesSectionPallets {
+        max-width: 50%;
+        margin-left: 20px;
+    }
+
+    .trianglesSectionPalletsImage {
+        width: 350px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .trianglesSection {
+        min-height: 80vh;
+    }
+
+    .trianglesSectionContent {
+        padding-left: 100px;
+    }
+
+    .trianglesSectionContent h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .trianglesSectionContent p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .trianglesSectionPallets {
+        padding-right: 20px;
+    }
+
+    .trianglesSectionPalletsImage {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        padding-top: 30vh;
+        padding-left: 50px;
+        max-width: 700px;
+    }
+
+    .trianglesSection {
+        min-height: 75vh;
+    }
+
+    .trianglesSectionContent {
+        padding-left: 40px;
+        margin-top: 80px;
+    }
+
+    .trianglesSectionPallets {
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+
+    .trianglesSectionPalletsImage {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .trianglesSectionPalletsImage {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroContent {
+        padding-top: 30vh;
+        max-width: 500px;
+    }
+
+    .heroContent h1 {
+        font-size: 32px;
+    }
+
+    .heroContent p {
+        font-size: 20px;
+    }
+
+    .heroContent button {
+        font-size: 22px;
+        width: 180px;
+        height: 55px;
+    }
+
+    .trianglesSectionPalletsImage {
+        width: 220px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .trianglesSectionPalletsImage {
+        width: 200px;
+        height: auto;
+    }
+
+    .trianglesSectionContent h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .trianglesSectionContent p {
+        font-size: 16px;
+        margin-top: 15px;
+
+    }
+
+    .trianglesSectionContent{
+         padding-left: 20px;
+    }
+
+    .trianglesSectionPallets {
+        padding-left: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent {
+        padding-top: 180px;
+        padding-left: 20px;
+        max-width: 500px;
+    }
+
+    .heroContent h1 {
+        font-size: 28px;
+    }
+
+    .heroContent button {
+        font-size: 22px;
+        width: 180px;
+        height: 55px;
+    }
+
+    .trianglesSectionPalletsImage {
+        width: 180px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .trianglesSectionPalletsImage {
+        width: 150px;
+        height: auto;
+    }
+}

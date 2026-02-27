@@ -1,0 +1,104 @@
+.page {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        linear-gradient(rgba(27, 34, 31, 0.7),
+            rgba(27, 34, 31, 0.7)),
+        url('/backgrount_catalog.webp') no-repeat left center;
+    background-size: cover;
+}
+
+.page h1 {
+    font-size: 48px;
+}
+
+.page h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.groups {
+    background-color: #1b221fcc;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.groupButton {
+    background: none;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.groupButton:hover {
+    background: var(--main_color);
+}
+
+.activeGroupButton {
+    background: var(--main_color);
+}
+
+
+@media (max-width: 1024px) {
+    .page {
+        padding-top: 120px;
+    }
+
+    .page h1 {
+        font-size: 42px;
+    }
+
+    .page h2 {
+        font-size: 30px;
+    }
+
+    .groupButton {
+        padding: 13px 30px;
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 875px) {
+    .page h1 {
+        font-size: 40px;
+    }
+
+    .page h2 {
+        font-size: 28px;
+    }
+
+    .groupButton {
+        padding: 10px 25px;
+    }
+
+    .groups {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .page h1 {
+        font-size: 36px;
+    }
+
+    .page h2 {
+        font-size: 24px;
+    }
+
+    .groups {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .groupButton {
+        padding: 15px 30px;
+        width: 350px;
+    }
+}
