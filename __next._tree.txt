@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/988ea4a506830ecf.css","style"]
+:HL["/_next/static/chunks/eeca64b87169ef58.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap","style"]
+0:{"buildId":"MHG8d5a5fIvvK1ZrZl-Lh","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
