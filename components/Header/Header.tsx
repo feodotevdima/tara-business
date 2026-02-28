@@ -38,7 +38,7 @@ const Header = () => {
                         </Link>
                         <Link
                             href="/catalog"
-                            className={`${styles.link} ${isActive('/catalog') ? styles.active : ''}`}
+                            className={`${styles.link} ${isActive('/catalog/') ? styles.active : ''}`}
                         >
                             Наши поддоны
                         </Link>
