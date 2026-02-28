@@ -18,7 +18,7 @@ export default function PalletCart({ photoPath, name }: Pallet) {
                     width={350}
                     height={250}
                     draggable="false"
-                    priority
+                    priority={true} 
                 />
             </div>
             <div className={styles.content}>

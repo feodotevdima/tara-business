@@ -36,7 +36,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.trianglesSectionPallets}>
-          <Image src="/pallet.webp" alt="pallet" width={375} height={450} className={styles.trianglesSectionPalletsImage} />
+          <Image src="/pallet.webp" alt="pallet" width={375} height={450} className={styles.trianglesSectionPalletsImage} priority={true} />
         </div>
       </div>
       <div className={styles.mapContainer}>

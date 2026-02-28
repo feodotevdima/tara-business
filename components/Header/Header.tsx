@@ -27,7 +27,7 @@ const Header = () => {
             <header className={styles.header}>
                 <div className={styles.container}>
 
-                    <Image src="/logo.svg" alt="Logo" width={220} height={68} className={styles.logo}/>
+                    <Image src="/logo.svg" alt="Logo" width={220} height={68} className={styles.logo} priority={true} />
 
                     <nav className={styles.desktopNav}>
                         <Link
@@ -45,8 +45,8 @@ const Header = () => {
                     </nav>
 
                     <div className={styles.contacts}>
-                        <Image src="/phone.svg" alt="Logo" width={39} height={43} onClick={handleCall} className={styles.phone}/>
-                        <Image src="/email.svg" alt="Logo" width={55} height={33} onClick={handleEmail} className={styles.email}/>
+                        <Image src="/phone.svg" alt="Logo" width={39} height={43} onClick={handleCall} className={styles.phone} priority={true} />
+                        <Image src="/email.svg" alt="Logo" width={55} height={33} onClick={handleEmail} className={styles.email} priority={true} />
                     </div>
                 </div>
             </header>
